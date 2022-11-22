@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.five-day{
+    padding: 50px 50px 0;
+    position: relative;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.form__title{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.form__input{
+    height: 30px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #000;
+    outline: none;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: slateblue;
+    width: 200px;
+}
+.form__input:focus{
+    -webkit-box-shadow: 0px 10px 13px -7px #000,5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000,5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+.form__btn{
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #000;
+    width: 120px;
+    cursor: pointer;
+    border-left: none;
+    background-color: slateblue;
+    color: #fff;
+}
+.weather__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.weather__temp{
+    font-size: 65px;
+    font-weight: 900;
+
+}
+.weather__img{
+
+}
+.weather__middle{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.weather__descr{
+    font-size: 18px;
+    color: slateblue;
+}
+.weather__switch{
+    margin: 0 10px;
+    align-self: flex-start;
+    display: flex;
+    column-gap: 7px;
+    font-size: 22px;
+}
+.weather__switch-item{
+    cursor: pointer;
+}
+.weather__switch-item.active{
+    color: orange;
+}
+.fiveDay{
+    height: 40px;
+    background-color: slateblue;
+    color: #fff;
+    cursor: pointer;
+    border: blue;
+    margin: 15px auto 0;
+    display: block;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 2;
+}
+.back{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 120px;
+    height: 40px;
+}
+.buttons{
+    display: flex;
+    column-gap: 40px;
+    padding-top: 40px;
+}
+.day-btn{
+    padding: 10px 20px;
+}
+.weather__row{
+    display: flex;
+    column-gap: 70px;
+    row-gap: 40px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.weather__card{
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    text-align: center;
+}
+.weather__card-time{}
+.weather__card-temp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+}
+.weather__card-cel{}
+.weather__card-desc{
+    font-size: 20px;
+    color: orangered;
+}
+.vanta{
+    position: fixed;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: slateblue;
+    font-size: 0;
+}
